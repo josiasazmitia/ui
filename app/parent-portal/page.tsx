@@ -1,6 +1,7 @@
 import { ParentDashboard } from "@/components/parent-portal/parent-dashboard"
 import { StudentGrades } from "@/components/parent-portal/student-grades"
 import { StudentAttendance } from "@/components/parent-portal/student-attendance"
+import { MessagesList } from "@/components/communications/messages-list"
 
 export default function ParentPortalPage() {
   return (
@@ -13,10 +14,13 @@ export default function ParentPortalPage() {
       </div>
 
       <ParentDashboard />
+
       <div className="grid gap-6 lg:grid-cols-2">
         <StudentGrades />
         <StudentAttendance />
       </div>
+
+      <MessagesList />
     </div>
   )
 }
